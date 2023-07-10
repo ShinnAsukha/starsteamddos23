@@ -1,6 +1,6 @@
 import os
 import sys
-import urllib2
+import urllib.request as urllib2
 import threading
 import random
 from banner import access
