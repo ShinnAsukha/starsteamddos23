@@ -3,7 +3,7 @@ import sys
 import urllib.request as urllib2
 import threading
 import random
-from banner import access
+import banner
 
 ########################################
 # Educational purpose only             #
